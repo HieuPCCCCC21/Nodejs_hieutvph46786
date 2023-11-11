@@ -1,0 +1,21 @@
+
+<div class="text-center mt-4">
+  <h1>All Products</h1>
+</div>
+<div class="row row-cols-1 row-cols-md-3 my-4 g-4">
+  {{#each products}}
+  <div class="col">
+    <div class="card">
+      <img src="{{this.image}}" class="img-fluid card-img-top"
+        alt="Hollywood Sign on The Hill" />
+      <div class="card-body">
+        <h5 class="card-title">{{this.name}}</h5>
+        <p class="text-danger">{{this.price}} Vnd</p>
+        <p class="card-text">
+          {{this.description}}
+        </p>
+      </div>
+    </div>
+  </div>
+  {{/each}}
+</div>
